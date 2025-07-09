@@ -14,7 +14,6 @@
     "dev:both": "concurrently \"npm run server\" \"npm run client:dev\"",
     "clean": "rm -rf node_modules client/node_modules package-lock.json client/package-lock.json",
     "fresh-install": "npm run clean && npm run setup",
-    "postinstall": "cd client && npm install",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "seed": "node seed-data.js"
   },
