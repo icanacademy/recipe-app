@@ -9,12 +9,11 @@
     "client": "cd client && npm start",
     "client:dev": "cd client && PORT=3005 npm start",
     "server": "nodemon server.js",
-    "build": "cd client && npm run build",
     "setup": "npm install && cd client && npm install && cd ..",
     "dev:both": "concurrently \"npm run server\" \"npm run client:dev\"",
     "clean": "rm -rf node_modules client/node_modules package-lock.json client/package-lock.json",
     "fresh-install": "npm run clean && npm run setup",
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "build": "cd client && npm run build",
     "seed": "node seed-data.js"
   },
   "dependencies": {
